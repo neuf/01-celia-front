@@ -1,0 +1,11 @@
+/*********************/
+/****** Home *****/
+/*********************/
+.home {
+  background-color: beige;
+
+  &_wrapper {
+    width: 100%;
+    max-width: 40rem;
+  }
+}

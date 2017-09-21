@@ -1,0 +1,11 @@
+/*********************/
+/****** About *****/
+/*********************/
+.about {
+  background-color: bisque;
+
+  &_wrapper {
+    width: 100%;
+    max-width: 40rem;
+  }
+}
