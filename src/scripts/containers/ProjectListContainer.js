@@ -109,7 +109,7 @@ class ProjectListContainer extends Component {
     }
 
     return (
-      <div>
+      <div className="project_list_container">
         {projectListRender}
       </div>
     );

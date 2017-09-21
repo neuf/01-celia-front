@@ -66,16 +66,19 @@ export default class pageTransition {
       }
 
     } else if (matchingRoutesArr.length) {
-        if(matchingRoutesArr[0].datas.transition.animation) {
+
+      if(matchingRoutesArr[0].datas.transition.animation) {
           this.transition = matchingRoutesArr[0].datas.transition.animation;
         }
         if (matchingRoutesArr[0].datas.bodyClass) {
           this.bodyClass = matchingRoutesArr[0].datas.bodyClass;
         }
+
     }
 
 
-    /*If therea are a bodyclass */
+
+    /*If there is a bodyclass */
     if (this.hookState != "componentWillLeave" && this.bodyClass) {
       let $body = document.querySelector('body');
       $body.setAttribute('class', '');
@@ -83,7 +86,7 @@ export default class pageTransition {
     }
 
 
-    /* If there are a transition */
+    /* If there is a transition */
     if (this.transition) {
       this.startAnimation();
     }else{
@@ -96,7 +99,7 @@ export default class pageTransition {
   }
 
 
-
+  /* Check Url matching for archive pages */
   isArchiveUrl(_path, _matching) {
     let originURL = 'http://0.0.0.0:8080';
     let currentURL = originURL + _path;
@@ -116,23 +119,20 @@ export default class pageTransition {
 
 
 
-
+  /* Start Animation */
   startAnimation() {
 
     switch(this.hookState) {
       case "componentWillAppear": {
-        console.log("componentWillAppear");
-        this.transition.componentWillAppear(this.callback);        
+        this.transition.componentWillAppear(this.callback);
         break;
       }
       case "componentWillEnter": {
-        console.log("componentWillEnter");
-        this.transition.componentWillEnter(this.callback);        
+        this.transition.componentWillEnter(this.callback);
         break;
       }
       case "componentWillLeave": {
-        console.log("componentWillLeave");
-        this.transition.componentWillLeave(this.callback);        
+        this.transition.componentWillLeave(this.callback);
         break;
       }
       default : {
@@ -140,6 +140,5 @@ export default class pageTransition {
       }
     }
   }
-
 };
 

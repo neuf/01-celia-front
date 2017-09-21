@@ -1,11 +1,23 @@
-// Import React
+/*******
+* REACT IMPORTS
+******/
 import React, { Component } from "react";
 
-// Component
+/*******
+* COMPONENTS IMPORTS
+******/
+import ProjectListContainer from "../../containers/ProjectListContainer"
+
+/*******
+* COMPONENT
+******/
 class Archive extends Component {
   render() {
     return (
-      <div>Je suis l'archive</div>
+      <section className="project_wrapper">
+        <h1>All projects</h1>
+        <ProjectListContainer></ProjectListContainer>
+      </section>
     )
   }
 }

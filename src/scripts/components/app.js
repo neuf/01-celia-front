@@ -8,7 +8,7 @@ import AnimatedSwitch from '../utils/AnimatedSwitch';
 import routes from "../config/routes";
 
 // Import Components
-import Navigation from "../components/00_ui/Navigation"
+import Header from "../components/01_layouts/Header"
 
 // Component
 class App extends Component {
@@ -36,7 +36,7 @@ class App extends Component {
 		const renderRoutes = this.renderRoutes();
 		return (
 			<main className="main">
-				<Navigation></Navigation>
+				<Header></Header>
 				<Route
 					render={({ location }) => (
 						<TransitionGroup component="div">
