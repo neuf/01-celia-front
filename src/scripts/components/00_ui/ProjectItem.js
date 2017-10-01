@@ -3,11 +3,10 @@
  ******/
 import React, { Component } from "react";
 
-
 /*******
  * COMPONENT
  ******/
-export default class ProjectList extends Component {
+export default class ProjectItem extends Component {
 
   /**
    * @method
@@ -34,17 +33,4 @@ export default class ProjectList extends Component {
     return projectList
   }
 
-
-  /**
-   * @method
-   * @name render
-   */
-  render() {
-    const projectList = this.renderProjectList();
-    return (
-        <ul className="projects_list">
-          {projectList}
-        </ul>
-    );
-  }
-};
+}

@@ -16,7 +16,7 @@ import { Provider } from 'react-redux';
 import store from './config/store';
 
 // Import App
-import App from "./components/app";
+import App from "./components/App";
 
 
 // Render
@@ -32,4 +32,4 @@ const renderApp = Component =>
 
 renderApp(App);
 
-if (module.hot) module.hot.accept("./components/app", () => renderApp(App));
+if (module.hot) module.hot.accept("./components/App", () => renderApp(App));

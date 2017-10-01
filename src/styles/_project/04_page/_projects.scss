@@ -1,0 +1,17 @@
+.projects {
+    background-color: $black;
+    color: $white;
+
+    // Title
+    &_title {
+        position: absolute;
+        top: calc(35rem / 2);
+        left: 0;
+    }
+
+    // Wrapper
+    &_wrapper {
+        position: relative;
+        padding-top: 35rem;
+    }
+}

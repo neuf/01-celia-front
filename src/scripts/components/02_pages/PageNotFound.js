@@ -1,7 +1,12 @@
-// Import React
+/*******
+* REACT IMPORTS
+******/
 import React, { Component } from "react";
 
-// Component
+
+/*******
+* COMPONENTS
+******/
 class PageNotFound extends Component {
   render() {
     return (

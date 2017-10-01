@@ -3,10 +3,12 @@
 ******/
 import React, { Component } from "react";
 
+
 /*******
 * COMPONENTS IMPORTS
 ******/
-import ProjectListContainer from "../../containers/ProjectListContainer"
+//import ProjectListContainer from "../../containers/ProjectListContainer"
+
 
 /*******
 * COMPONENT
@@ -14,9 +16,8 @@ import ProjectListContainer from "../../containers/ProjectListContainer"
 class Archive extends Component {
   render() {
     return (
-      <section className="project_wrapper">
-        <h1>All projects</h1>
-        <ProjectListContainer></ProjectListContainer>
+      <section className="projects_wrapper">
+        <h1 className="projects_title">All projects</h1>
       </section>
     )
   }
