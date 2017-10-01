@@ -101,7 +101,7 @@ export default class pageTransition {
 
   /* Check Url matching for archive pages */
   isArchiveUrl(_path, _matching) {
-    let originURL = 'http://0.0.0.0:8080';
+    let originURL = HOST_URL; // Cf: Webpack config
     let currentURL = originURL + _path;
 
     let urlToCheck = originURL + _matching;

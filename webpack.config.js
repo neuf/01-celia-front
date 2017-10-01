@@ -115,7 +115,10 @@ module.exports = {
 				from: 'src/assets/fonts',
 				to: 'assets/fonts'
 			}
-		])
+		]),
+		new webpack.DefinePlugin({
+			"HOST_URL": JSON.stringify('http://celia.cool/')
+		})
 	],
 
 	output: {

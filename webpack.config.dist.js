@@ -128,7 +128,8 @@ module.exports = {
 			comments: false
 		}),
 		new webpack.DefinePlugin({
-			"process.env.NODE_ENV": JSON.stringify("production")
+			"process.env.NODE_ENV": JSON.stringify("production"),
+			"HOST_URL": JSON.stringify('http://0.0.0.0:8080/')
 		})
 	],
 
